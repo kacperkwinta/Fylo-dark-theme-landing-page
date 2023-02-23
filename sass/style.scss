@@ -30,20 +30,8 @@ body {
 }
 //////////
 // UTILITY
-.marg-btm-s {
-	margin-bottom: 2.4rem;
-}
-
 .marg-btm-m {
 	margin-bottom: 4.8rem;
-}
-
-.marg-top-s {
-	margin-top: 2.4rem;
-}
-
-.marg-top-m {
-	margin-top: 4.8rem;
 }
 
 /////////////
@@ -125,6 +113,7 @@ body {
 	background-position-y: 30rem;
 	background-position-x: -50rem;
 	background-repeat: no-repeat no-repeat;
+	animation: fadeIn 1.5s ease forwards;
 
 	.cta-img {
 		display: block;
@@ -141,6 +130,16 @@ body {
 		font-size: 2rem;
 		line-height: 1.7;
 		margin: 0 auto;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		clip-path: circle(1.5% at 50% 50%);
+	}
+
+	100% {
+		clip-path: circle(70.7% at 50% 50%);
 	}
 }
 
