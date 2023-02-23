@@ -11,6 +11,16 @@ $color-accent-3: hsl(0, 100%, 63%);
 
 $color-neutral-1: hsl(0, 0%, 100%);
 
+// Animations
+.hidden {
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+.show {
+	opacity: 1;
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -80,7 +90,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 6.4rem 9.6rem;
+	padding: 6.4rem 9.6rem 2.4rem 9.6rem;
 
 	&__wrapper {
 		display: flex;
@@ -117,6 +127,7 @@ body {
 
 	.cta-img {
 		display: block;
+		max-width: 50rem;
 		margin: 0 auto;
 		margin-bottom: 4.8rem;
 	}
@@ -144,7 +155,7 @@ body {
 }
 
 .section-features {
-	padding: 9.6rem 0;
+	padding: 12.6rem 0 9.6rem 0;
 	background-color: $color-primary-2;
 
 	.container {
