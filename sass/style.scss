@@ -452,6 +452,22 @@ footer {
 			}
 		}
 	}
+
+	.attribution {
+		margin-top: 2.4rem;
+		line-height: 1.7;
+
+		a:link,
+		a:visited {
+			color: $color-accent-1;
+			transition: all 0.3s ease;
+		}
+
+		a:hover,
+		a:active {
+			color: lighten($color-accent-1, 10);
+		}
+	}
 }
 
 // BELOW 900 PX
@@ -546,7 +562,6 @@ footer {
 // BELOW 425 PX
 @media (max-width: 26.5625em) {
 	.header {
-
 		.logo {
 			width: 6.4rem;
 		}
