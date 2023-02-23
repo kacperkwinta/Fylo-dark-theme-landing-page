@@ -53,8 +53,9 @@ body {
 	font-family: "Raleway", sans-serif;
 }
 
-.paragraph {
-	line-height: 1.5;
+.heading-secondary {
+	font-size: 4.4rem;
+	font-family: "Raleway", sans-serif;
 }
 
 .paragraph--small {
@@ -171,6 +172,53 @@ body {
 				height: 10rem;
 				margin: 0 auto;
 			}
+		}
+	}
+}
+
+.section-how {
+	padding: 9.6rem 0;
+	background-color: $color-primary-2;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 4.8rem;
+
+		.heading-secondary {
+			max-width: 40rem;
+			margin-bottom: 2.4rem;
+		}
+
+		p {
+			max-width: 50rem;
+			line-height: 1.7;
+			font-size: 1.6rem;
+			margin-bottom: 2.4rem;
+		}
+
+		a:link,
+		a:visited {
+			padding-bottom: 0.5rem;
+			border-bottom: 1px solid $color-accent-1;
+			font-size: 1.8rem;
+			color: $color-accent-1;
+			text-decoration: none;
+			line-height: 1;
+			transition: all 0.3s ease;
+
+			display: flex;
+			align-items: center;
+			width: fit-content;
+			gap: 0.6rem;
+		}
+
+		a:hover,
+		a:active {
+			color: $color-neutral-1;
+			border-bottom: 1px solid $color-neutral-1;
+			
 		}
 	}
 }
