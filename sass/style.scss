@@ -176,7 +176,7 @@ body {
 	}
 }
 
-.section-how {
+.section-productive {
 	padding: 9.6rem 0;
 	background-color: $color-primary-2;
 
@@ -218,7 +218,83 @@ body {
 		a:active {
 			color: $color-neutral-1;
 			border-bottom: 1px solid $color-neutral-1;
-			
+		}
+	}
+}
+
+.section-testimonials {
+	padding: 9.6rem 4.8rem 22rem 4.8rem;
+	background-color: $color-primary-2;
+
+	.container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2.4rem;
+
+		.testimonial {
+			background-color: $color-primary-4;
+			border-radius: 4px;
+			max-width: 45rem;
+			padding: 4.8rem 2.4rem 3.2rem 2.4rem;
+			position: relative;
+			box-shadow: $color-primary-4 0px 5px 15px;
+
+			&:nth-child(1)::before {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 5rem;
+				width: 6rem;
+				top: -3.2rem;
+				left: -3.2rem;
+				background-image: url(../images/bg-quotes.png);
+				background-repeat: no-repeat no-repeat;
+			}
+
+			&:nth-child(3)::after {
+				content: "";
+				position: absolute;
+				display: block;
+				height: 5rem;
+				width: 6rem;
+				bottom: -3.2rem;
+				right: -3.2rem;
+				background-image: url(../images/bg-quotes.png);
+				background-repeat: no-repeat no-repeat;
+			}
+
+			p {
+				line-height: 1.5;
+				margin-bottom: 2.4rem;
+			}
+
+			.profile {
+				display: flex;
+				align-items: center;
+				gap: 1.2rem;
+
+				img {
+					height: 3.2rem;
+					border-radius: 50%;
+				}
+
+				.profile-info {
+					display: flex;
+					flex-direction: column;
+
+					.profile-name {
+						margin-bottom: 0;
+						font-size: 1.2rem;
+					}
+
+					.profile-position {
+						color: darken($color-neutral-1, 15);
+						font-size: 1.1rem;
+						margin-bottom: 0;
+					}
+				}
+			}
 		}
 	}
 }
