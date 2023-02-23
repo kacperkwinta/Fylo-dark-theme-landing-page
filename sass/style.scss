@@ -1,0 +1,36 @@
+// Colors
+
+$color-primary-1: hsl(217, 28%, 15%);
+$color-primary-2: hsl(218, 28%, 13%);
+$color-primary-3: hsl(216, 53%, 9%);
+$color-primary-4: hsl(219, 30%, 18%);
+
+$color-accent-1: hsl(176, 68%, 64%);
+$color-accent-2: hsl(198, 60%, 50%);
+$color-accent-3: hsl(0, 100%, 63%);
+
+$color-neutral-1: hsl(0, 0%, 100%);
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	// Headings, Call-to-actions, Header Navigation
+	font-family: "Raleway", sans-serif;
+	// Body
+	font-family: "Open Sans", sans-serif;
+}
+
+body {
+	font-size: 1.4rem;
+}
+
+// SPACING SYSTEM (px)
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+// FONT SIZE SYSTEM (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
