@@ -223,7 +223,7 @@ body {
 }
 
 .section-testimonials {
-	padding: 9.6rem 4.8rem 22rem 4.8rem;
+	padding: 9.6rem 4.8rem 12.6rem 4.8rem;
 	background-color: $color-primary-2;
 
 	.container {
@@ -297,6 +297,76 @@ body {
 			}
 		}
 	}
+}
+
+.section-early-access {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 4.8rem;
+	transform: translateY(15.6rem);
+	background-color: $color-primary-1;
+	border-radius: 4px;
+	text-align: center;
+	box-shadow: $color-primary-3 0px 30px 60px -12px,
+		rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+	h3 {
+		font-size: 3.2rem;
+		font-family: "Raleway", sans-serif;
+		margin-bottom: 2.4rem;
+	}
+
+	p {
+		margin-bottom: 2.4rem;
+	}
+
+	form {
+		display: flex;
+		justify-content: center;
+		gap: 2.4rem;
+
+		.input-email {
+			width: 100%;
+			border-radius: 3rem;
+			border: none;
+			padding-left: 2.4rem;
+
+			&::placeholder {
+				font-family: inherit;
+				color: gray;
+			}
+		}
+
+		.input-submit {
+			font-family: inherit;
+			color: inherit;
+			background-image: linear-gradient(
+				to right,
+				$color-accent-1,
+				$color-accent-2
+			);
+			padding: 1.4rem 2.4rem;
+			border-radius: 3rem;
+			font-size: 1.6rem;
+			font-weight: 700;
+			border: none;
+
+			&:hover,
+			&:active {
+				cursor: pointer;
+				background-image: linear-gradient(
+					to right,
+					lighten($color-accent-1, 10),
+					lighten($color-accent-2, 10)
+				);
+			}
+		}
+	}
+}
+
+footer {
+	padding: 12.6rem 6.4rem;
+	background-color: $color-primary-3;
 }
 
 // Headings, Call-to-actions, Header Navigation
