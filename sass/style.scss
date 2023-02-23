@@ -14,7 +14,7 @@ $color-neutral-1: hsl(0, 0%, 100%);
 // Animations
 .hidden {
 	opacity: 0;
-	transition: all 1s ease;
+	transition: all 1.2s ease;
 }
 
 .show {
@@ -34,7 +34,7 @@ html {
 
 body {
 	font-size: 1.4rem;
-	background-color: $color-primary-1;
+	background-color: $color-primary-2;
 	color: $color-neutral-1;
 	font-family: "Open Sans", sans-serif;
 }
@@ -87,6 +87,8 @@ body {
 /////////////
 
 .header {
+	background-color: $color-primary-1;
+
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -118,12 +120,12 @@ body {
 
 .section-cta {
 	text-align: center;
+	background-color: $color-primary-1;
 	background-image: url(../images/bg-curvy-desktop.svg);
 	background-size: cover;
-	background-position-y: 30rem;
-	background-position-x: -50rem;
+	background-position-y: 15rem;
+	background-position-x: -30rem;
 	background-repeat: no-repeat no-repeat;
-	animation: fadeIn 1.5s ease forwards;
 
 	.cta-img {
 		display: block;
@@ -144,15 +146,7 @@ body {
 	}
 }
 
-@keyframes fadeIn {
-	0% {
-		clip-path: circle(1.5% at 50% 50%);
-	}
 
-	100% {
-		clip-path: circle(70.7% at 50% 50%);
-	}
-}
 
 .section-features {
 	padding: 12.6rem 0 9.6rem 0;
@@ -502,7 +496,6 @@ footer {
 		background-image: url(../images/bg-curvy-mobile.svg);
 
 		.cta-img {
-			margin-top: 2.4rem;
 			width: 90%;
 		}
 
