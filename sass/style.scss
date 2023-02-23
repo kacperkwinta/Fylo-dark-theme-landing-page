@@ -15,19 +15,134 @@ $color-neutral-1: hsl(0, 0%, 100%);
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
+	// border: 1px solid tomato;
 }
 
 html {
 	font-size: 62.5%;
-	// Headings, Call-to-actions, Header Navigation
-	font-family: "Raleway", sans-serif;
-	// Body
-	font-family: "Open Sans", sans-serif;
 }
 
 body {
 	font-size: 1.4rem;
+	background-color: $color-primary-1;
+	color: $color-neutral-1;
+	font-family: "Open Sans", sans-serif;
 }
+//////////
+// UTILITY
+.marg-btm-s {
+	margin-bottom: 2.4rem;
+}
+
+.marg-btm-m {
+	margin-bottom: 4.8rem;
+}
+
+.marg-top-s {
+	margin-top: 2.4rem;
+}
+
+.marg-top-m {
+	margin-top: 4.8rem;
+}
+
+/////////////
+// COMPONENTS
+.heading-primary {
+	font-size: 4.4rem;
+	font-family: "Raleway", sans-serif;
+}
+
+.paragraph {
+	line-height: 1.5;
+}
+
+.btn {
+	&:link,
+	&:visited {
+		display: inline-block;
+		margin-top: 2.4rem;
+		padding: 1.8rem 8rem;
+		border-radius: 3rem;
+		background-image: linear-gradient(
+			to right,
+			$color-accent-1,
+			$color-accent-2
+		);
+		color: $color-neutral-1;
+		text-decoration: none;
+		font-weight: 700;
+		font-size: 1.6rem;
+	}
+
+	&:hover,
+	&:active {
+		background-image: linear-gradient(
+			to right,
+			lighten($color-accent-1, 10),
+			lighten($color-accent-2, 10)
+		);
+	}
+}
+/////////////
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 6.4rem 9.6rem;
+
+	&__wrapper {
+		display: flex;
+		gap: 4.8rem;
+
+		&-link {
+			font-family: "Raleway", sans-serif;
+
+			&:link,
+			&:visited {
+				text-decoration: none;
+				color: darken($color-neutral-1, 15);
+				transition: all 0.3s ease;
+			}
+
+			&:hover,
+			&:active {
+				text-decoration: underline;
+				color: $color-neutral-1;
+			}
+		}
+	}
+}
+
+.section-cta {
+	text-align: center;
+	background-image: url(../images/bg-curvy-desktop.svg);
+	background-size: cover;
+	background-position-y: 10rem;
+	background-position-x: -50rem;
+	background-repeat: no-repeat no-repeat;
+
+	.cta-img {
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 4.8rem;
+	}
+
+	.text-container {
+		margin: 0 auto;
+		max-width: 75rem;
+	}
+
+	.cta-description {
+		font-size: 2rem;
+		line-height: 1.7;
+		margin: 0 auto;
+	}
+}
+
+// Headings, Call-to-actions, Header Navigation
+// font-family: "Raleway", sans-serif;
 
 // SPACING SYSTEM (px)
 // 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
